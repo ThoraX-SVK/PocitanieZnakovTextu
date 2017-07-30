@@ -10,10 +10,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-/**
- *
- * @author Tom
- */
 public class InputTextFrame extends Frame implements ActionListener {
     
     MyFrame F;
@@ -25,16 +21,13 @@ public class InputTextFrame extends Frame implements ActionListener {
         this.setSize(300, 300);
         this.setLocationRelativeTo(F);
         
-        addWindowListener(new WindowAdapter ()
-                                {   public void windowClosing(WindowEvent e) {
-                                    
+        addWindowListener(new WindowAdapter () {   
+            public void windowClosing(WindowEvent e) {
                                         dispose();
                                     }
                                 }
         );
-        
-        
-        
+
         TA = new TextArea("");
         TA.setText(str);
         
@@ -64,7 +57,4 @@ public class InputTextFrame extends Frame implements ActionListener {
             this.dispose();
         }
     }
-    
-    
-    
 }
